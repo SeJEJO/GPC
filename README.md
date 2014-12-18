@@ -2,6 +2,7 @@ GPC
 ===
 Desarrollado:
 SeJEJO
+https://twitter.com/GPC_es
 
 Descripcion:
 Este proyecto se basa en un Gestor Personal de Contraseñas, 

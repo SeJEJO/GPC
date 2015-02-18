@@ -1,7 +1,12 @@
 GPC
 ===
 Desarrollado:
-SeJEJO
+Director:
+SeJEJO - https://twitter.com/SeJEJO
+Colaborador:
+Raim - jesusraim@gmail.com
+
+Twitter del Proyecto
 https://twitter.com/GPC_es
 
 Descripcion:
@@ -11,7 +16,13 @@ Con esta aplicación en Java conectandose a una base de datos donde podrás gest
 
 ===
 Developer:
-SeJEJO
+Manager:
+SeJEJO - https://twitter.com/SeJEJO
+Collaborator:
+Raim - jesusraim@gmail.com
+
+Twitter of proyect:
+https://twitter.com/GPC_es
 
 Description:
 This proyect is a Personal Password Manager,

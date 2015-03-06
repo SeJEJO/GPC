@@ -41,7 +41,7 @@ public class Usuario {
 	 ***/
 	// Metodo para actualizar los registros del usuario 
 	public int updateReg_Usu(Conexion con, String[][] param) throws SQLException, NumberFormatException{
-		String query = "update usuario set nombre_usu = ?, pass_usu = ?, acceso = ? where id_usuario = ?";
+		String query = "update usuario set nombre_usu = ?, pass_usu = ?, acceso = ?, intento=? where nombre_usu = ?";
 		return con.manipulatedReg(query, param);
 	}
 	

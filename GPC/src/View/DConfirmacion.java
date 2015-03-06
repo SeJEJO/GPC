@@ -33,20 +33,27 @@ public class DConfirmacion extends JDialog {
 	public DConfirmacion() {
 		setBounds(100, 100, 599, 143);
 		getContentPane().setLayout(null);
-		{
-			JButton btn_aceptar = new JButton("Aceptar");
-			btn_aceptar.addActionListener(new ActionListener() {
-				public void actionPerformed(ActionEvent arg0) {
-				}
-			});
-			btn_aceptar.setBounds(236, 71, 89, 23);
-			getContentPane().add(btn_aceptar);
-		}
-		{
-			JLabel lb_mensaje = new JLabel("");
-			lb_mensaje.setBounds(10, 11, 563, 52);
-			getContentPane().add(lb_mensaje);
-		}
+		
+		JButton btn_si = new JButton("Si");
+		btn_si.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
+		btn_si.setBounds(236, 71, 89, 23);
+		getContentPane().add(btn_si);
+		
+		JButton btn_no = new JButton("No");
+		btn_no.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				setVisible(false);
+			}
+		});
+		btn_no.setBounds(281, 71, 89, 23);
+		getContentPane().add(btn_no);
+
+		JLabel lb_mensaje = new JLabel("");
+		lb_mensaje.setBounds(10, 11, 563, 52);
+		getContentPane().add(lb_mensaje);
 	}
 
 }

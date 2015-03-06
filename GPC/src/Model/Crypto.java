@@ -60,22 +60,25 @@ public class Crypto {
 	}
 	public static String ordenar(String palabra){
 		String ordenar="",numeros="";
-		String palabrasinordenar = palabra.substring(0, palabra.indexOf("/:"));
-		int[] num = new int[palabrasinordenar.length()];
-		char[] letras = palabrasinordenar.toCharArray();
-		numeros = palabra.substring(palabra.indexOf("/:")+2);
-		for (int i = 0; i<num.length; i++) {
-			num[i]= Integer.valueOf(numeros.substring(0, numeros.indexOf(";")));
-			numeros = numeros.substring(numeros.indexOf(";")+1);
-		}
-		for (int i = letras.length-1; i >=0  ; i--) {
-			char aux = letras[i];
-			letras[i] = letras[num[i]];
-			letras[num[i]] = aux;
-		}
-		for(int i=0;i<letras.length;i++){
-			ordenar+=letras[i];
-		}
+		if(palabra.indexOf("/:")>0){
+			String palabrasinordenar = palabra.substring(0, palabra.indexOf("/:"));
+			int[] num = new int[palabrasinordenar.length()];
+			char[] letras = palabrasinordenar.toCharArray();
+			numeros = palabra.substring(palabra.indexOf("/:")+2);
+			for (int i = 0; i<num.length; i++) {
+				num[i]= Integer.valueOf(numeros.substring(0, numeros.indexOf(";")));
+				numeros = numeros.substring(numeros.indexOf(";")+1);
+			}
+			for (int i = letras.length-1; i >=0  ; i--) {
+				char aux = letras[i];
+				letras[i] = letras[num[i]];
+				letras[num[i]] = aux;
+			}
+			for(int i=0;i<letras.length;i++){
+				ordenar+=letras[i];
+			}
+		}else
+			ordenar=palabra;
 		return ordenar;
 	}
 	

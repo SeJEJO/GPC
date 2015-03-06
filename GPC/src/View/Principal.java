@@ -1,6 +1,5 @@
 package View;
 
-import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -116,6 +115,7 @@ public class Principal extends JFrame {
 		JButton btnConsultar = new JButton("Consultar");
 		btnConsultar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				cPrin.cargarViewConUsu();
 			}
 		});
 		btnConsultar.setBounds(26, 102, 99, 45);

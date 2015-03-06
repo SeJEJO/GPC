@@ -22,8 +22,8 @@ public class CPrincipal {
 	public static View.DAna_usu dAn_Usu;
 	public static View.DBor_adm dBo_Adm;
 	public static View.DBor_usu dBo_Usu;
-	public static View.DMod_adm dCon_Adm;
-	public static View.DMod_usu dMo_Usu;
+	public static View.DCon_adm dCon_Adm;
+	public static View.DCon_usu dCon_Usu;
 	public static View.DLogin dLog = new View.DLogin();
 	public static View.DConfirmacion dConf;
 	public static View.DError dError;
@@ -94,13 +94,13 @@ public class CPrincipal {
 	//
 	public void cargarViewConUsu(){
 		// TODO
-		//dCon_Adm =  new View.DMod_adm();
-		//dCon_Adm.setVisible(true);
+		dCon_Usu =  new View.DCon_usu();
+		dCon_Usu.setVisible(true);
 	}
 	// TODO
 	//
 	public void cargarViewConAdmin(){
-		dCon_Adm =  new View.DMod_adm();
+		dCon_Adm =  new View.DCon_adm();
 		dCon_Adm.setVisible(true);
 	}
 	//

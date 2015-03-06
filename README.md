@@ -9,6 +9,11 @@ Raim - jesusraim@gmail.com
 Twitter del Proyecto
 https://twitter.com/GPC_es
 
+
+El método para cifrar y descifrar es de:
+arturotena -> https://gist.github.com/arturotena
+	artículo -> https://gist.github.com/arturotena/9235042
+
 Descripcion:
 Este proyecto se basa en un Gestor Personal de Contraseñas, 
 cuantas contraseñas tienes en un post-it o en bloc de notas. 
@@ -20,6 +25,10 @@ Manager:
 SeJEJO - https://twitter.com/SeJEJO
 Collaborator:
 Raim - jesusraim@gmail.com
+
+The method for encrypt and decrypt is:
+arturotena -> https://gist.github.com/arturotena
+	article -> https://gist.github.com/arturotena/9235042
 
 Twitter of proyect:
 https://twitter.com/GPC_es
